@@ -24,10 +24,10 @@
               <li><a href="blog.html">Blog</a></li>
               <li><a href="contact.html">Contact</a></li>
 
-              <li class="ml-xl-3 login"><a href="login.html"><span class="border-left pl-xl-4"></span>Log In</a></li>
-              <li><a href="register.html">Register</a></li>
+              <li class="ml-xl-3 login"><a href="#" data-toggle="modal" data-target="#loginModal"><span class="border-left pl-xl-4"></span>Log In</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#registerModal">Register</a></li>
 
-              <li><a href="#" class="cta"><span class="bg-primary text-white rounded">+ Post an Ad</span></a></li>
+              <li><a href="#" class="cta"><span class="bg-primary text-white rounded">+ Submit Papper</span></a></li>
             </ul>
           </nav>
         </div>
@@ -40,3 +40,4 @@
       </div>
     <!-- </div> -->
   </header>
+
