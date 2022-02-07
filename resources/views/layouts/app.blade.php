@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ClassyAds &mdash; Colorlib Website Template</title>
+    <title>{{ __('JoeMan') }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('fonts/icomoon/style.css') }}">
+    <link id="favicon" rel="icon" type="image/png" sizes="8x8" href="images/logo.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -24,10 +25,15 @@
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     @yield('styles')
+    <link rel="stylesheet" href="{{ asset('mystyle.css') }}">
+    <link rel="stylesheet" href="{{ asset('font-awesome.min.css') }}">
 
   </head>
   <body>
+    @yield('style')
 
+  </head>
+  <body>
   <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -38,6 +44,15 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
+    @include('patials.header')
+
+    @yield('content')
+
+    @include('patials.footer')
+  </div>
+
+  <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ asset('js/jquery-migrate-3.0.1.min.js') }}"></script>
 
     @include('partials.header')
 
@@ -58,6 +73,11 @@
   <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
   <script src="{{ asset('js/bootstrap-datepicker.min.js') }}"></script>
   <script src="{{ asset('js/aos.js') }}"></script>
+  <script src="{{ asset('s/rangeslider.min.js') }}j"></script>
+  <script src="{{ asset('js/main.js') }}"></script>
+
+  </body>
+</html>
   <script src="{{ asset('js/rangeslider.min.js') }}"></script>
 
   <script src="js/main.js"></script>
