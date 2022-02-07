@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{ asset('css/rangeslider.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    @yield('style')
+    @yield('styles')
 
   </head>
   <body>

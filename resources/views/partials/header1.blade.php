@@ -11,20 +11,19 @@
 
             <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
               <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="listings.html">Contact</a></li>
-              <li><a href="listings.html">Author's Guide</a></li>
+              <li><a href="#"><strong>{{ $today->toDayDateTimeString('M d Y') }}</strong></a></li>
+              <li><a href="#">Author's Guide</a></li>
               <li class="has-children">
-                <a href="about.html">Journals</a>
+                <a href="#">Journals</a>
                 <ul class="dropdown">
                     <li><a href="listings.html">Editorial Board</a></li>
                     <li><a href="listings.html">Indexing Board</a></li>
                 </ul>
               </li>
 
-              <li class="ml-xl-3 login"><a href="#" data-toggle="modal" data-target="#loginModal"><span class="border-left pl-xl-4"></span>Log In</a></li>
-              <li><a href="#" data-toggle="modal" data-target="#registerModal">Register</a></li>
 
-              <li><a href="#" class="cta"><span class="bg-primary text-white rounded">+ Submit Papper</span></a></li>
+              <li><a href="#" class="cta"><span class="bg-primary text-white rounded">Back</span></a></li>
+              <li><a href="#" class="cta"><span class="bg-primary text-white rounded">Logout</span></a></li>
             </ul>
           </nav>
         </div>
