@@ -19,7 +19,5 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [PagesController::class, 'index']);
-<<<<<<< HEAD
-=======
 Route::get('/admin', [PagesController::class, 'admin']);
->>>>>>> 915263283e04003d0d5075d96cb2a6f4cf9b79cc
+
